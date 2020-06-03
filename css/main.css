@@ -1,0 +1,151 @@
+/*
+ * Links
+ */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+
+/*
+ * Custom default button
+ */
+.btn-secondary {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #e95c58;
+    border: .05rem solid #e95c58;
+}
+
+
+/*
+ * Base structure
+ */
+html,
+body {
+    height: 100%;
+    background-color: #282d35;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+}
+h1 {
+    font-weight: 100;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+h2, p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.app-container {
+    max-width: 100%;
+}
+.learn-more {
+    margin-top: 4rem;
+}
+.install-icon {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+/*
+ * Header
+ */
+.header {
+    margin-top: 0.5rem;
+}
+.header .header-logo {
+    margin-top: 1rem;
+}
+.header .header-logo img {
+    height: 10rem;
+}
+.header .header-logo h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.header .header-desc {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*
+ * Installing
+ */
+.installing {
+    background: rgba(0, 0, 0, 0.07);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.installing .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+.installing .installing-code{
+    background: rgba(0, 0, 0, 0.2);
+    overflow-x: scroll;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.installing .installing-code p {
+    white-space: nowrap;
+    font-family: "Monaco", "Menlo", monospace;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.installing .installing-desc {
+    text-align: left;
+}
+.installing .installing-desc p {
+    margin: 0.5rem 0 0 0;
+}
+
+/*
+ * Footer
+ */
+.foot {
+    color: rgba(255, 255, 255, .5);
+}
+
+/*
+ * Fork me
+ */
+#forkme {
+    width: 149px;
+    height: 149px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+@media screen and (max-width: 700px) {
+    #forkme {
+        width: 100px;
+        height: 100px;
+    }
+}
