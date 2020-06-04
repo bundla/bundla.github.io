@@ -15,13 +15,11 @@ a:hover {
     color: #333;
     text-shadow: none;
     background-color: #fff;
-    border: .05rem solid #fff;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
     color: #fff;
     background-color: #e95c58;
-    border: .05rem solid #e95c58;
 }
 
 
@@ -104,18 +102,32 @@ h2, p {
     font-weight: 700;
 }
 .installing .installing-code{
+    display: flex;
+    justify-content: space-between;
+}
+.installing .installing-code p {
     background: rgba(0, 0, 0, 0.2);
     overflow-x: scroll;
     padding: 10px 30px;
-    border-radius: 5px;
-}
-.installing .installing-code p {
+    border-radius: 5px 0 0 5px;
     white-space: nowrap;
     font-family: "Monaco", "Menlo", monospace;
     font-size: 12px;
-    padding: 0;
     margin: 0;
     color: white;
+}
+.installing .installing-code button {
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.33);
+    color: white;
+    border-radius: 0 5px 5px 0;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.installing .installing-code button:hover {
+    background-color: #e95c58;
+    color: #fff;
 }
 .installing .installing-desc {
     text-align: left;

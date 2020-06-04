@@ -27,7 +27,9 @@
         <div class="installing">
             <h2><i class="install-icon fa fa-terminal"></i> Installing Bundla</h2>
             <div class="installing-code">
+                <input id="install_command" type="hidden" value="/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tgaru/bundla/master/install.sh)&quot;">
                 <p>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tgaru/bundla/master/install.sh)&quot;</p>
+                <button onclick="copyCommand()"><i id="install_command_copy_icon" class="fa fa-copy"></i></button>
             </div>
             <div class="installing-desc">
                 <p>Paste that in a macOS Terminal or Linux shell prompt.</p>
@@ -47,5 +49,21 @@
     </div>
 
     <a href="https://github.com/tgaru/bundla"><img src="https://aral.github.io/fork-me-on-github-retina-ribbons/right-white@2x.png" id="forkme" alt="Fork me on GitHub"></a>
+
+    <script>
+        function copyCommand() {
+            let command_element = document.getElementById('install_command');
+            let copy_icon_element = document.getElementById('install_command_copy_icon');
+            command_element.type='text';
+            command_element.select();
+            command_element.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            command_element.type='hidden';
+            copy_icon_element.className = 'fa fa-check'
+            setTimeout(() => {
+                copy_icon_element.className = 'fa fa-copy'
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
